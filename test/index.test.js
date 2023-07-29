@@ -67,7 +67,6 @@ describe("Test de RUTAS", () => {
     };
 
     it("Agrega un nuevo elemento al enviar un objeto por body", async () => {
-
       const { body } = await agent.post("/rickandmorty/fav").send(favorite1);
 
       expect(body).toBeInstanceOf(Array);
@@ -88,15 +87,15 @@ describe("Test de RUTAS", () => {
       const { body } = await agent.delete("/rickandmorty/fav/3");
       expect(body).toBeInstanceOf(Array);
       expect(body).toEqual([
-      {
-        id: 1,
-        name: "Rick Sanchez",
-      },
-      {
-        id: 2,
-        name: "Morty Smith",
-      },
-    ]);
+        {
+          id: 1,
+          name: "Rick Sanchez",
+        },
+        {
+          id: 2,
+          name: "Morty Smith",
+        },
+      ]);
     });
 
     it("Elimina correctamente al personaje", async () => {
@@ -106,7 +105,7 @@ describe("Test de RUTAS", () => {
         {
           id: 2,
           name: "Morty Smith",
-        }
+        },
       ]);
     });
   });
