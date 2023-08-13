@@ -6,11 +6,9 @@ const postUser = async (req, res) => {
     if (!user || !email || !password) {
       return res.status(400).json({ error: "Faltan datos" });
     }
-    const usuario = await User.create({ user, email, password})
+    const usuario = await User.create({ user, email, password });
 
-    if (usuario) {
-      return res.status(201).json(usuario);
-    }
+    res.status(201).json(usuario);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
