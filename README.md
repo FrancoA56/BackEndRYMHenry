@@ -5,7 +5,7 @@
 
 <h4>Para iniciar el servidor es necesario instalar las dependencias (npm install), completar el archivo .env, crear una base de datos de postgreSQL que se llame rickandmorty y luego levantar la aplicacion (npm start). Recuerda que este es solo el servidor, el cliente esta en el repositorio FrontEndRYMHenry</h4>
 
-<h4>Para completar el archivo .env puedes seguir los siguientes pasos:</h4>
+<h4>Para completar el archivo .env puedes seguir los siguientes pasos:</h4> 
 
 <h5>DB_USER=*  // Reemplaza el asterisco por tu nombre de usuario en PostgreSQL, su valor predeterminado es postgres |</h5>
 <h5>DB_PASSWORD=*  // Reemplaza el asterisco por tu contraseña de PostgreSQL |</h5>
